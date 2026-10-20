@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Неіснуючий домен (DNS)",
+        "url": "https://nonexistent-domain-test-123456.com",
+        "expected_status": 200,
+        "timeout": 3,
+        "response_time_threshold": 2.0
+    },
+    {
+        "name": "Закритий порт (Connection Refused)",
+        "url": "http://127.0.0.1:59999",
+        "expected_status": 200,
+        "timeout": 3,
+        "response_time_threshold": 2.0
+    },
+    {
+        "name": "Прострочений сертифікат (SSL Error)",
+        "url": "https://expired.badssl.com",
+        "expected_status": 200,
+        "timeout": 5,
+        "response_time_threshold": 2.0
+    },
+    {
+        "name": "Несподіваний код (404 замість 200)",
+        "url": "https://httpbin.org/status/404",
+        "expected_status": 200,
+        "timeout": 5,
+        "response_time_threshold": 2.0
+    },
+    {
+        "name": "Робочий Endpoint (Success)",
+        "url": "https://httpbin.org/get",
+        "expected_status": 200,
+        "timeout": 5,
+        "response_time_threshold": 2.0
+    }
+]
