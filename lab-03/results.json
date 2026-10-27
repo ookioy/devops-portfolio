@@ -1,47 +1,47 @@
 [
   {
-    "timestamp": "2026-10-20T15:31:17.957276Z",
+    "timestamp": "2026-10-27T18:30:47.787584Z",
     "name": "Неіснуючий домен (DNS)",
     "url": "https://nonexistent-domain-test-123456.com",
     "status": "FAILED",
     "failure_type": "DNS",
     "details": "HTTPSConnectionPool(host='nonexistent-domain-test-123456.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='nonexistent-domain-test-123456.com', port=443): Failed to resolve 'nonexistent-domain-test-123456.com' ([Errno -2] Name or service not known)\"))",
-    "response_time": 0.22
+    "response_time": 0.021
   },
   {
-    "timestamp": "2026-10-20T15:31:17.957276Z",
+    "timestamp": "2026-10-27T18:30:47.787584Z",
     "name": "Закритий порт (Connection Refused)",
     "url": "http://127.0.0.1:59999",
     "status": "FAILED",
     "failure_type": "З'єднання відхилено",
     "details": "HTTPConnectionPool(host='127.0.0.1', port=59999): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=59999): Failed to establish a new connection: [Errno 111] Connection refused\"))",
-    "response_time": 0.002
+    "response_time": 0.003
   },
   {
-    "timestamp": "2026-10-20T15:31:17.957276Z",
+    "timestamp": "2026-10-27T18:30:47.787584Z",
     "name": "Прострочений сертифікат (SSL Error)",
     "url": "https://expired.badssl.com",
     "status": "FAILED",
     "failure_type": "Помилка сертифіката",
     "details": "Невалідний або прострочений SSL/TLS сертифікат",
-    "response_time": 0.748
+    "response_time": 0.64
   },
   {
-    "timestamp": "2026-10-20T15:31:17.957276Z",
+    "timestamp": "2026-10-27T18:30:47.787584Z",
     "name": "Несподіваний код (404 замість 200)",
     "url": "https://httpbin.org/status/404",
     "status": "FAILED",
     "failure_type": "Несподіваний код",
     "details": "Отримано status 404, очікувався 200",
-    "response_time": 0.961
+    "response_time": 1.265
   },
   {
-    "timestamp": "2026-10-20T15:31:17.957276Z",
+    "timestamp": "2026-10-27T18:30:47.787584Z",
     "name": "Робочий Endpoint (Success)",
     "url": "https://httpbin.org/get",
     "status": "SUCCESS",
     "failure_type": null,
     "details": "OK",
-    "response_time": 0.607
+    "response_time": 0.667
   }
 ]
